@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form.css">
+    <title>form</title>
+</head>
+<body> 
+    <div id="i">
+        <h1>edit form</h1>
+    </div>
+    <div class="dot">
+        <div class="titel">
+            Plase enter your name and Phone Number
+        </div>
+        <form method='post' action='/edit_submit'>
+
+            <input type='text' name='old_name' value='{{ name }}'
+                hidden><br>
+            <input type='text' name='old_phone' value='{{ phone }}'
+                hidden><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" ><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+          
+    </div>
+</body>
+</html>
